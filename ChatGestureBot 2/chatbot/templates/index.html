@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatGestureBot</title>
+</head>
+<body>
+    <h1>🌱 Chat with Plant Robot</h1>
+    <form method="post">
+        <input type="text" name="message" placeholder="Say something..." required>
+        <button type="submit">Send</button>
+    </form>
+    {% if response %}
+        <p><strong>Bot:</strong> {{ response }}</p>
+    {% endif %}
+</body>
+</html>
